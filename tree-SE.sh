@@ -33,6 +33,16 @@ new_year=$(date +'%Y')
 let new_year++
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo GOD JUL! 
+ # Flashing text
+        sh=0
+        for l in G O D  J U L !
+        do
+            tput cup $((lin+1)) $((c+sh))
+            echo $l
+            let sh++
+            sleep 0.01
+        done
+    }
 let c++
 k=1
 
