@@ -33,7 +33,6 @@ new_year=$(date +'%Y')
 let new_year++
 tput setaf 1; tput bold
 
-
 let c++
 k=1
 
@@ -56,6 +55,9 @@ while true; do
         line[$k$i]=$li
         column[$k$i]=$co
         color=$(((color+1)%8))
-       
+        # Flashing text
+        sh=1
+        
+    }
     k=$((k % 2 + 1))
 done
