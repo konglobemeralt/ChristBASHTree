@@ -42,7 +42,7 @@ tput cup $lin $((c - 6)); echo GOD JUL!
             let sh++
             sleep 0.01
         done
-    }
+    
 let c++
 k=1
 
